@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Светозар 24номер -->
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Страница</h1>
+        <nav>
+            <ul>
+                <li><a href="#info">Информация</a></li>
+                <li><a href="#table">Таблица с данни</a></li>
+                <li><a href="#lists">Списъци</a></li>
+                <li><a href="#contact">Форма за контакт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="info">
+            <h2>Секция с картинка и текст</h2>
+            <p>
+                HTML (HyperText Markup Language) е стандартният език за създаване на уеб страници и уеб приложения. С
+                помощта на HTML можем да структурираме съдържанието, като използваме различни елементи като заглавия,
+                параграфи, картинки и много други.
+            </p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fatlas-content-cdn.pixelsquid.com%2Fstock-images%2Fgray-cube-NxPnry1-600.jpg&f=1&nofb=1&ipt=964df9c3245818e099897b4c5aed6cae4b95d6db37f01ddd438b855967a85ebf"
+                alt="Правоъгълна сива картинка">
+        </section>
+
+
+        <hr>
+
+        <section id="table">
+            <h2>Секция с таблица</h2>
+            <p>Таблицата по-долу показва данни за потребители</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Име</th>
+                        <th>Възраст</th>
+                        <th>Град</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Иван Петров</td>
+                        <td>28</td>
+                        <td>София</td>
+                    </tr>
+                    <tr>
+                        <td>Мария Георгиева</td>
+                        <td>34</td>
+                        <td>Пловдив</td>
+                    </tr>
+                    <tr>
+                        <td>Георги Иванов</td>
+                        <td>45</td>
+                        <td>Варна</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="lists">
+            <h2>Секция със списъци</h2>
+
+            <h3>Подреден списък ( любими плодове):</h3>
+            <ol>
+                <li>Ябълки</li>
+                <li>Банани</li>
+                <li>Ягоди</li>
+            </ol>
+
+            <h3>Неподреден списък (задачи за деня):</h3>
+            <ul>
+                <li>Да напазарувам</li>
+                <li>Да напиша HTML код</li>
+                <li>Да спортувам</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Секция с форма за контакт</h2>
+            <p>Моля попълни формата за да се свържеш с нас</p>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Име:</label><br>
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Имейл:</label><br>
+                    <input type="email" id="email" name="user_email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="message">Съобщение:</label><br>
+                    <textarea id="message" name="user_message" rows="5" cols="30" required></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Изпращане</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 3027 Никакви права незапазени.</p>
+    </footer>
+
+</body>
+
+</html>
