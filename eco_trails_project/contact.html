@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Еко пътеки - Контакти</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Еко пътеки България</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="trails.html">Пътеки и маршрути</a></li>
+                <li><a href="contact.html" class="active">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Свържете се с нас</h2>
+            <p>Имате въпроси или искате да научите повече? Попълнете формата по-долу и ще се свържем с вас скоро.</p>
+
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Име:</label>
+                            <input type="text" id="name" name="name" required placeholder="Въведете вашето име">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Имейл:</label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="trail">Изберете маршрут:</label>
+                            <select id="trail" name="trail" required>
+                                <option value="">-- Изберете маршрут --</option>
+                                <option value="rila-lakes">Седемте рилски езера</option>
+                                <option value="vihren">Вихрен</option>
+                                <option value="wonderful-bridges">Чудните мостове</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Съобщение:</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Напишете вашето съобщение..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Изпрати</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Контактна информация</h3>
+                    <div class="info-item">
+                        <strong>Адрес:</strong>
+                        <p>ул. "Планинска" 15<br>София 1000, България</p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Телефон:</strong>
+                        <p>+359 2 123 4567</p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Имейл:</strong>
+                        <p>info@ekopateki.bg</p>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Работно време:</strong>
+                        <p>Понеделник - Петък: 9:00 - 18:00<br>Събота: 10:00 - 14:00<br>Неделя: Почивен ден</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>Нашето местоположение</h3>
+                <img src="images/mountain-map.png" alt="Карта на планинските маршрути в България" class="map-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Еко пътеки България. Всички права запазени.</p>
+        <p>Изграден с грижа за природата</p>
+    </footer>
+</body>
+</html>
